@@ -84,7 +84,7 @@ app.post('/login', (req, res) => {
 app.get('/register', (req, res) =>{
     // console.log('currently on hime page');
          res.render('register',{
-             title: 'register',
+             title: 'Sign In',
              style: "login.css",
              err_user: "",
              user:"",
@@ -121,7 +121,7 @@ app.post("/register", (req, res) => {
     }
     if( er_user.length>0 || er_email.length>0 || er_pass.length>0 ||er_conpass.length>0 ){
         res.render("register",{
-            title:"customer registeration form",
+            title:"Sign In",
             err_user: er_user, style: "login.css",
             user:req.body.user,
             err_email: er_email,

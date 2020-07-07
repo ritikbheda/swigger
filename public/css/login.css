@@ -61,7 +61,7 @@ form{
     
     width: 70%;
     color: #ffffff;
-    background-color: #e8015a;
+    background-color: rgb(240, 158, 6);
     border: none;
     text-align: center;
     cursor: pointer;
@@ -73,5 +73,10 @@ form{
 
 #register #submit input:hover
 {
-    background-color:#a10440 ;
+    background-color:orange ;
+}
+
+.error_register{
+    font-style: italic;
+    font-size: small;
 }

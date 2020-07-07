@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+html{
+    margin: 2.5px;
+    padding: 2.5px;
+    font-family: 'Comfortaa', cursive;
+    background-image: linear-gradient(rgb(255,255,255), rgb(200,200, 200));
+}
+
+header{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+#headerIcon{
+    margin-top: 10px;
+    margin-left: 45px;;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-right: 80px;
+}
+
+.navi-list{
+    float: right;
+    padding: 0 15px;
+    color: blue;
+    font-size: 22px;
+}
+
+.hero-options{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+li a{
+    text-decoration: none;
+}
+
+
+li a{
+    color: blue;
+}
+
+li a:visited{
+    color: blue;
+}
+
+
+#comp-features{
+    /* background-color: rgba(255, 2, 255, 0.3); */
+    /* padding: 10%; */
+    display: inline;   
+}
+
+.feature-desc{
+    font-size: 15px;
+    /* min-width: 140px; */
+    /* width: 24%; */
+    margin-top: 3px;
+}
+
+.each-feature{
+    /* background-color: pink; */
+    /* flex: 25%;  */
+    /* width: 23%; */
+    display: inline-block;
+    text-align: center;  
+    margin: 0 50px; 
+}
+
+
+.feature-head{
+    margin: 0;
+    font-size: 25px;
+}
+
+.fas{
+    padding: 10px;
+    /* margin: 20px; */
+    margin: 0px;
+}
+
+
+/* footer */
+
+.footerAll{
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.companylogo{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerLogo{
+    margin-bottom: 10px;
+}
+
+.footerMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerContent{
+
+    max-width: 350px;
+    display: inline-block;
+    margin: 40px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 600px){
+    .footerContent{
+        width: 350px;
+    }
+}
+
+
+
+.H6list{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 0 0 20px;
+}
+
+.noTextDecoA{
+    text-decoration: none;
+}
+
+.listContent{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+}
+
+.copyright{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    color: white;
+    background-color: rgb(85, 85, 85);
+}
+
+.link{
+    margin: 5px 5px;
+    padding: 3px;
+    border-radius: 3px;
+}

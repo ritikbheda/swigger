@@ -1,0 +1,77 @@
+
+
+#register{
+    color: #000;
+    top:50%;
+    padding: 60px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(255,235,205, 0.3); */
+    /* background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+    background-size: cover;
+    
+}
+
+form{
+    width: 400px;
+    height: auto;
+    border: black;
+    /* border-style: ridge; */
+    border-width: thin;
+    box-shadow: 5px 5px 10px rgb( 0, 0, 0, 0.4);
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 50px 20px;
+    background:white;
+    background-size: 100% 100%;
+}
+
+#register li 
+{
+    list-style-type: none;   
+}
+
+#register a
+{    
+    text-decoration: none;
+}
+
+#register form input
+{
+    width: 100%;
+    height: 30px;
+    border: #bcbfc5;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#register .input{
+    padding: 10px 0px;
+}
+#submit {
+    text-align: center;
+}
+
+#register #submit input
+{
+    
+    width: 70%;
+    color: #ffffff;
+    background-color: #e8015a;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all ease-in-out 0.5s;
+}
+
+#register #submit input:hover
+{
+    background-color:#a10440 ;
+}

@@ -1,0 +1,101 @@
+<div style=" position: relative;">
+    <div id="food-hero" style="margin-top :36px;">
+        <img id="hero-image" src="/img/food_hero.jpg" alt="food hero image" id="food-hero-image" style="height: 580px;">
+    </div>
+    <div id="hero-section">
+        <h2 id="hero-head">Meals and gxrocery delivered</h2>
+        <ul  style=" margin-left:-25px;">
+            <li class="navi-list hero-options"><a href="/mealpakages">build your order</a></li>   
+            <li class="navi-list hero-options">view packages</li>
+        </ul>
+    </div>
+</div>
+<!--
+<div style="text-align: center; margin: 100px 0;">
+    <div id="comp-features">
+        <div class="each-feature" >
+            <i class="fas fa-laptop fa-4x" style=" margin: 0px;"></i>
+            <h4 class="feature-head">order</h4>
+            <p class="feature-desc" >order from +200 locations</p>
+        </div>
+        <div class="each-feature" >
+            <i class="fas fa-mitten fa-4x"></i>
+            <h4 class="feature-head">Heat</h4>
+            <p class="feature-desc">easy to cook </p>
+        </div>
+        <div class="each-feature">
+            <i class="fas fa-utensils fa-4x"></i>
+            <h4 class="feature-head">Eat</h4>
+            <p class="feature-desc">food is ready!</p>
+        </div>
+        <div class="each-feature">
+            <i class="fas fa-redo fa-4x"></i>
+            <h4 class="feature-head">Repeat</h4>
+            <p class="feature-desc">skip a week or cancel anytime</p>
+        </div>
+        
+    </div>
+</div>
+ -->
+
+<div class="contentSection">
+    <div class="subContentSection">
+        <div class="eachFeature">
+            <div class="featureImg">
+                <img width="105" height="199" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="no-minimum-order-photo">
+            </div>
+            <div class="featureHead"> NO MINIMUM ORDER</div>
+            <div class="featureDesc"> Need a coke? or order for a house party</div>
+        </div>
+         <div class="eachFeature">
+            <div class="featureImg">
+                <img width="105" height="199" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy">
+            </div>
+            <div class="featureHead">LIVE ORDER TRACKING</div>
+            <div class="featureDesc">Know where your order is at all times</div>
+        </div>
+         <div class="eachFeature">
+            <div class="featureImg">
+                <img width="105" height="199" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn">
+            </div>
+            <div class="featureHead">FAST DELIVERY</div>
+            <div class="featureDesc">Get a full refund if it takes more that half an hour</div>
+        </div>
+         <div class="eachFeature">
+            <div class="featureImg">
+                <img width="105" style="margin-top: 95px;" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_90,h_90/tvjhvfzjhbxune2idler">
+            </div>
+            <div class="featureHead">BEST OFFERS</div>
+            <div class="featureDesc"> Need a coke? or order for a house party</div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div class="top-meals">
+    {{#each topMeal}}
+    <div>
+        <img src="{{this.imgPath}}" style="max-width: 500px; height: 500px;">
+        <h4>{{this.title}}</h4>
+        <p>{{this.desc}}</p>
+    </div>
+    {{/each}}
+</div>
+-->
+<div class="topMeals">
+    <div>
+        <h1 class="">Trending Today</h1>
+    </div>
+   <div class="subTopMeals">
+       {{#each topMeal}}
+       <div class="eachMeal">
+           <div >
+               <img class="mealImg" src="{{this.imgPath}}">
+           </div>
+           <div class="mealTitle">{{this.title}}</div>
+           <div class="mealPrice">${{this.price}}</div>
+       </div>
+        {{/each}}
+   </div>
+</div>
+

@@ -1,0 +1,30 @@
+<div id="register" >
+    
+    <form action="/register" method="POST" >
+    <h2>Login</h2> 
+            <hr>
+        <div class="input">
+        <label for="user">Username</label>
+        <input type="text" value="{{user}}" name="user" id="user" >
+        <div class="error_register">{{err_user}}</div>
+        </div>
+        <div class="input">
+        <label for="email">E-mail</label>
+        <input type="email" value="{{email}}" name="email" id="email" >
+        <div class="error_register">{{err_user}}</div>
+        </div>
+        <div class="input">
+        <label for="password">Password</label>
+        <input type="password" value="{{pass}}" name="password" id="password" >
+        <div class="error_register">{{err_pass}}</div>
+        </div>
+        <div class="input">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" value="{{conpass}}" name="conpassword" id="confirmpassword" >
+        <div class="error_register">{{err_conpass}}</div>
+        </div>
+        <div id="submit" class="input">
+        <input type="submit" value="Sign Up">
+        </div>
+    </form>
+</div>

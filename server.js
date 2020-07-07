@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.get('/', (req, res) =>{
    // console.log('currently on hime page');
         res.render('home',{
-            title: 'Grofers',
+            title: 'SWIFFERS',
             style: 'home.css',
             topMeal: meal.getTopMeal()
         });

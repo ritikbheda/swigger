@@ -5,7 +5,7 @@ const meal = {
         this.fakeData.push({
             title: "Pasta",
             price: 7,
-            topMeal: true,
+            topMeal: false,
             imgPath: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             desc: "pasta from Mexico"
         });
@@ -26,7 +26,7 @@ const meal = {
         this.fakeData.push({
             title: "Biryani",
             price: 20,
-            topMeal: true,
+            topMeal: false,
             imgPath: "https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             desc: "Pakistani Chiken Biryani avaiable with special 'chutney' "
         });
@@ -40,7 +40,7 @@ const meal = {
         this.fakeData.push({
             title: "",
             price: 18,
-            topMeal: true,
+            topMeal: false,
             imgPath: "https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             desc: ""
         });
@@ -64,7 +64,7 @@ const meal = {
         this.fakeData.push({
             title: "Noodles",
             price: 18,
-            topMeal: true,
+            topMeal: false,
             imgPath: "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             desc: ""
         });
@@ -80,7 +80,7 @@ const meal = {
         this.fakeData.push({
             title: "Fries",
             price: 18,
-            topMeal: true,
+            topMeal: false,
             imgPath: "https://images.pexels.com/photos/1583891/pexels-photo-1583891.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             desc: ""
         });

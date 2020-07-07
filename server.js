@@ -28,10 +28,11 @@ app.get('/', (req, res) =>{
         });
     })
 
-app.get('/mealpakages', (req, res) => {
+app.get('/meal', (req, res) => {
     res.render("meal", {
-        title: "meal",
-        style: "meal.css"
+        title: "meal",  
+         style: 'home.css',
+        allMeal: meal.getAllMeals(),
 
     });
     //onsole.log('you are on the mael pakages page.');
@@ -40,11 +41,45 @@ app.get('/mealpakages', (req, res) => {
 app.get('/login', (req, res) => {
     res.render("login",{
         title: "login",
-        style: "login.css"
+        style: "login.css",
+        email:"",
+        err_email: "",
+        pass: "",
+        err_pass: "",
+
     });
     //console.log('you are in login pafe');
 });
+app.post('/login', (req, res) => {
+    let er_email=[];
+    let er_pass=[];
 
+    if(req.body.email===""){
+        er_email.push("You must enter a valid email address.");
+    }
+    if(req.body.password===""){
+        er_pass.push("You must enter a password.");
+    }
+
+    if( er_pass.length>0 || er_email.length>0 ){
+        res.render("login",{
+            title: "login",
+            style: "login.css",
+            email:req.body.email,
+            err_email: er_email,
+            pass: req.body.pass,
+            err_pass: er_pass,
+    
+        });
+    }
+
+    else{
+        
+        res.redirect("/");
+
+ 
+    }
+});
 
 app.get('/register', (req, res) =>{
     // console.log('currently on hime page');
@@ -68,9 +103,8 @@ app.post("/register", (req, res) => {
     let er_email=[];
     let er_pass=[];
     let er_conpass=[];
-    let regex=/^[0-9a-zA-Z]+$/;
     if(req.body.user===""){
-        er_user.push("You must enter your firstname.");
+        er_user.push("You must enter your username.");
     }
 
     if(req.body.email===""){

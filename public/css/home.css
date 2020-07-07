@@ -1,6 +1,5 @@
 #hero-image{
     width: 100%;
-    height: 30%;
 }
 #hero-section{
     
@@ -26,6 +25,7 @@ li a{
 
 .contentSection{
     background-color: #2b1e15;
+    /* overflow: scroll; */
 }
 
 .subContentSection{
@@ -37,7 +37,14 @@ li a{
 .eachFeature{
     color: white;
     text-align: center;
+    display: inline-block;
     max-width: 300px;
+}
+@media screen and (max-width: 600px){
+    .eachFeature{
+        width: 300px;
+    }
+
 }
 
 .featureImg{
@@ -53,9 +60,7 @@ li a{
     margin-bottom: 8px;
 }
 
-.featureDesc{
 
-}
 
 /* End of content section*/
 

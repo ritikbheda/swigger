@@ -1,3 +1,17 @@
-<h1>
-userr name: {{name}}/</h1>
-// i cant hear anthing
+
+<div class="topMeals">
+    <div>
+        <h1 class="">Best meals in the town on your screen</h1>
+    </div>
+   <div class="subTopMeals">
+       {{#each allMeal}}
+       <div class="eachMeal">
+           <div >
+               <img class="mealImg" src="{{this.imgPath}}">
+           </div>
+           <div class="mealTitle">{{this.title}}</div>
+           <div class="mealPrice">${{this.price}}</div>
+       </div>
+        {{/each}}
+   </div>
+</div>

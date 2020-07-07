@@ -1,52 +1,19 @@
-<!--
-<div id="login"  style=" width: 100%;">
-    <div id="alreadyAccounts" style=" float: left;
-    position: relative;
-    left: 50%;">
-        <ul style="float: left;
-    position: relative;
-    left: -50%;">
-            <li class="li-class"><a href=""><i class="fab fa-facebook-square "></i></a></li>
-            <li class="li-class"><a href=""><i class="fab fa-google"></i></a></li>
-            <li class="li-class"><a href=""><i class="fab fa-twitter-square"></i></a></li>
-            <li class="li-class"><a href=""><i class="fab fa-linkedin"></i></a></li>
-         </ul>
-    </div><br><br><br><br>
 
-
-</div>
-<p style="text-align: center; padding-top: 0; margin-top: 0;">or</p>
-
-
-<div id="login-info" style="text-align: center;">
-    <form post="/login">
-        <div id="form-email">
-            <label for="exampleInputEmail1" id="email" class="form-asker">Email address</label><br>
-            <input type="email" class="form-control" style="width: 400px; height:1.5rem;"> 
-        </div>
-        <div id="form-password" style="margin-top: 10px;">
-            <label for="exampleInputPassword1" id="password" class="form-asker">Password</label><br>
-            <input type="password" class="form-control" style="width: 400px; height:1.5rem;">
-        </div>
-        
-    </form>
-
-</div>
-
--->
 <div id="register" >
         
-        <form action="#">
+        <form action="/login" method="POST" >
             <h2>Login</h2> 
             <hr>
             
             <div class="input">
-            <label for="email">E-mail or Username</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email">E-mail</label>
+            <input type="email" value="{{email}}" name="email" id="email" required>
+            <div class="error_register">{{err_email}}</div>
             </div>
             <div class="input">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" value="{{pass}}" name="password" id="password" required>
+            <div class="error_register">{{err_pass}}</div>
             </div>
             <div id="submit" class="input">
             <input type="submit" value="Login">

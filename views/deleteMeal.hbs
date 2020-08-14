@@ -1,0 +1,19 @@
+
+<div class="topMeals">
+    <div>
+        <h1 class="">Best meals in the town on your screen</h1>
+    </div>
+   <div class="subTopMeals">
+       {{#each data}}
+       <a href="/delete/{{this.id}}">
+       <div class="eachMeal">
+           <div >
+               <img class="mealImg" src="{{this.imgAddress}}">
+           </div>
+           <div class="mealTitle">{{this.title}}</div>
+           <div class="mealPrice">${{this.price}}</div>
+       </div>
+       </a>
+        {{/each}}
+   </div>
+</div>

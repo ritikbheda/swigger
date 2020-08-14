@@ -7,13 +7,13 @@
             
             <div class="input">
             <label for="email">E-mail</label>
-            <input type="email" value="{{email}}" name="email" id="email" required>
-            <div class="error_register">{{err_email}}</div>
+            <input type="email" value="{{email}}" name="email" id="email" >
+            <div class="error_register">{{error.[0]}}</div>
             </div>
             <div class="input">
             <label for="password">Password</label>
-            <input type="password" value="{{pass}}" name="password" id="password" required>
-            <div class="error_register">{{err_pass}}</div>
+            <input type="password" value="{{password}}" name="password" id="password">
+            <div class="error_register">{{error.[1]}}</div>
             </div>
             <div id="submit" class="input">
             <input type="submit" value="Login">

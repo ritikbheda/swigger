@@ -1,0 +1,53 @@
+<div id="register" >
+    
+    <form action="/finalUpdate" method="POST">
+    <h2>uopdate Meal</h2> 
+            <hr>
+
+        <div class="input">
+        <input type="hidden" value="{{id}}" name="id" id="user" >
+        </div>
+
+        <div class="input">
+        <label for="title">item name</label>
+        <input type="text" value="{{title}}" name="title" id="user" >
+        <div class="error_register">{{error.[0]}}</div>
+        </div>
+        <div class="input">
+        <label for="desc">description</label>
+        <input type="text" value="{{desc}}" name="desc" id="email" >
+        <div class="error_register">{{error.[1]}}</div>
+        </div>
+        <div class="input">
+        <label for="price">price</label>
+        <input type="number" value="{{price}}" name="price" id="password" >
+        <div class="error_register">{{error.[2]}}</div>
+        </div>
+        <div class="input">
+        <label for="foodCategory">Food category</label>
+        <input type="text" value="{{foodCategory}}" name="foodCategory" id="user" >
+        <div class="error_register">{{error.[3]}}</div>
+        </div>
+        <div class="input">
+        <label for="numOFcontains">numOFcontains</label>
+        <input type="text" value="{{numOFcontains}}" name="numOFcontains" id="user" >
+        <div class="error_register">{{error.[4]}}</div>
+        </div>
+        
+        <div class="input">
+        <label for="topMeal">Top Meal</label>
+        <input type="radio" value="Yes" name="topMeal" id="user" ><label for="Yes">Yes</label>
+        <input type="radio" value="No" name="topMeal" id="user" ><labelfor="No">No</label>
+        <div class="error_register">{{error.[5]}}</div>
+        </div>
+
+        <div class="input">
+        <label for="imgAddress">image</label>
+        <input type="file" name="imgAddress" id="confirmpassword" accept="image/png, image/jpg, image/gif">
+        <div class="error_register">{{error.[6]}}</div>
+        </div>
+        <div id="submit" class="input">
+        <input type="submit" value="Add">
+        </div>
+    </form>
+</div>

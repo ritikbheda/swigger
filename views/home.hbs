@@ -50,14 +50,16 @@
         <h1 class="">Trending Today</h1>
     </div>
    <div class="subTopMeals">
-       {{#each topMeal}}
+       {{#each data}}
+       <a href="/description/{{this.id}}">
        <div class="eachMeal">
-           <div >
-               <img class="mealImg" src="{{this.imgPath}}">
+           <div>
+               <img class="mealImg" src="/img/{{imgAddress}}">
            </div>
            <div class="mealTitle">{{this.title}}</div>
            <div class="mealPrice">${{this.price}}</div>
        </div>
+       </a>
         {{/each}}
    </div>
 </div>

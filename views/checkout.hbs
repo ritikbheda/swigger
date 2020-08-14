@@ -1,0 +1,75 @@
+<!--<h1>
+    This is the checkout page
+</h1>
+{{#each data}}
+<a href="/description/{{this.id}}">
+    <p>{{this.title}}</p>
+    <p>{{this.price}}</p>
+    <p>{{this.quantity}}</p>
+</a>
+{{/each}}
+
+
+
+<a href="/checkoutFinal" class="order-now"> order now</a>
+-->
+<style>
+   
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+    width:1000px;
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #dd5;
+  }
+}
+</style>
+
+
+<h1>Checkout List</h1>
+<table class="rwd-table">
+  <tr>
+    <th>Item Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+  </tr>
+  {{#each data}}
+  <tr>
+    <td data-th="">{{this.title}}</td>
+    <td data-th="">{{this.price}}</td>
+    <td data-th="">{{this.quantity}}</td>
+    <td data-th="">{{this.total}}</td>
+  </tr>
+  {{/each}}
+  </table>
+
+<a href="/checkoutFinal" class="order-now"> order now</a>
